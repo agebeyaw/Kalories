@@ -64,7 +64,7 @@ $config = array(
             'loginUrl' => array('/UserAdmin/auth/login'),
         ),
         'db' => array(
-            'connectionString' => 'mysql:host=localhost;dbname=kalories_motork',
+            'connectionString' => 'mysql:host=localhost;dbname=kalories',
             'emulatePrepare' => true,
             'username' => 'root',
             'password' => '',
