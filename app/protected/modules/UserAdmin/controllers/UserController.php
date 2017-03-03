@@ -76,64 +76,7 @@ class UserController extends AdminDefaultController {
      */
     public function actionView($id) {
         $model = $this->loadModel($id);
-
         $this->_checkAccessLevel($model);
-
-        // Fill roleIds for checkBoxList
-        foreach ($model->roles as $role)
-            $model->roleIds[] = $role->code;
-
-        if (isset($_POST['User']['roleIds'])) {
-            UserHasUserRole::model()->deleteAllByAttributes(array(
-                'user_id' => $id,
-            ));
-
-            // Reset cache
-            UserCache::model()->updateAll(array(
-                'status' => 0,
-            ));
-
-            if (is_array($_POST['User']['roleIds'])) {
-                foreach ($_POST['User']['roleIds'] as $roleId) {
-                    $newRole = new UserHasUserRole;
-                    $newRole->user_id = $id;
-                    $newRole->user_role_code = $roleId;
-                    $newRole->save(false);
-                }
-            }
-
-            Yii::app()->user->setFlash('roleSaved', 'aga');
-            $this->redirect(array('view', 'id' => $id));
-        }
-
-
-        // Fill taskIds for checkBoxList
-        foreach ($model->tasks as $task)
-            $model->taskIds[] = $task->code;
-
-        if (isset($_POST['User']['taskIds'])) {
-            UserHasUserTask::model()->deleteAllByAttributes(array(
-                'user_id' => $id,
-            ));
-
-            // Reset cache
-            UserCache::model()->updateAll(array(
-                'status' => 0,
-            ));
-
-            if (is_array($_POST['User']['taskIds'])) {
-                foreach ($_POST['User']['taskIds'] as $taskId) {
-                    $newTask = new UserHasUserTask;
-                    $newTask->user_id = $id;
-                    $newTask->user_task_code = $taskId;
-                    $newTask->save(false);
-                }
-            }
-
-            Yii::app()->user->setFlash('taskSaved', 'aga');
-            $this->redirect(array('view', 'id' => $id));
-        }
-
         $this->render('view', compact('model'));
     }
 
