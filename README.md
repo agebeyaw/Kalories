@@ -42,7 +42,7 @@ return array(
 );
 ~~~
 
-For MySQL, use the file **app/protected/data/Kalories-mysql.sql** to create the required tables.
+For MySQL, use the file **app/data/Kalories-mysql.sql** to create the required tables.
 
 You're done! Now you can start the application by navigating to: [http://localhost/app/](http://localhost/app/).
 
