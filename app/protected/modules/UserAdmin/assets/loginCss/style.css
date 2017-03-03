@@ -1,0 +1,76 @@
+body{
+        background-color:#efefef;
+}
+#m_login{
+        position:fixed;
+        top:50%;
+        left:50%;
+        width:250px;
+        margin-left:-125px;
+        margin-top:-150px;
+        border:1px solid gray;
+        padding:10px;
+
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+
+        background-image: linear-gradient(bottom, rgb(247,247,247) 35%, rgb(240,240,240) 68%);
+        background-image: -o-linear-gradient(bottom, rgb(247,247,247) 35%, rgb(240,240,240) 68%);
+        background-image: -moz-linear-gradient(bottom, rgb(247,247,247) 35%, rgb(240,240,240) 68%);
+        background-image: -webkit-linear-gradient(bottom, rgb(247,247,247) 35%, rgb(240,240,240) 68%);
+        background-image: -ms-linear-gradient(bottom, rgb(247,247,247) 35%, rgb(240,240,240) 68%);
+
+        background-image: -webkit-gradient(
+                linear,
+                left bottom,
+                left top,
+                color-stop(0.35, rgb(247,247,247)),
+                color-stop(0.68, rgb(240,240,240))
+        );
+
+        box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
+        -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
+        -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.80);
+}
+form{
+        margin-left:30px;
+}
+.rememberMe label{
+        display:inline;
+}
+.btn{
+        margin-top:20px;
+}
+
+
+
+
+/*//======= Form Errors =======*/
+span.required {
+    color: red;
+}
+form div.error label:first-child,
+form label.error,
+form span.error
+{
+	color: #C00;
+}
+
+form div.error input,
+form div.error textarea,
+form div.error select,
+form input.error,
+form textarea.error,
+form select.error
+{
+	background: #FEE;
+	border-color: #C00;
+}
+form .errorMessage
+{
+	color: red;
+        /*font-size: 0.9em;*/
+}
+/*//======= End of Form Errors =======*/
+

@@ -1,0 +1,28 @@
+.centered {
+        text-align:center !important;
+}
+.controllers-box label {
+        margin-left:30px;
+}
+.commonControllerName, .moduleControllerName {
+        font-size:16px;
+        line-height:16px;
+        font-style:italic;
+        border-bottom:1px gray dashed;
+        cursor:pointer;
+}
+.controllerNameContainer {
+        margin-top:20px;
+}
+
+.grayHeader {
+        padding:0;
+        margin:0;
+        background-color:#f7f7f7;
+}
+.grayHeader h2 {
+        padding:0;
+        margin:0;
+        font-size:23px;
+        color:#444;
+}
