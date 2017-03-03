@@ -20,7 +20,6 @@ When displayed, the total for that day is colored in green, otherwise it is red.
 Unzip the project to your server web-root directory and modify the file **app/protected/config/main.php** to configure connection to your database:
 
 ~~~
-[php]
 // Set the path of Bootstrap to be the root of the project.
 Yii::setPathOfAlias('bootstrap', realpath(__DIR__ . '/../../../'));
 
