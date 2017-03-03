@@ -17,7 +17,7 @@ When displayed, the total for that day is colored in green, otherwise it is red.
 
 ## How to install
 
-Unzip the project to your server web-root directory and modify the file **app/protected/config/main.php** to configure connection to your database:
+Clone the project to your server web-root directory and modify the file **app/protected/config/main.php** to configure connection to your database:
 
 ~~~
 // Set the path of Bootstrap to be the root of the project.
@@ -44,7 +44,7 @@ return array(
 
 For MySQL, use the file **app/data/Kalories-mysql.sql** to create the required tables.
 
-You're done! Now you can start the application by navigating to: [http://localhost/app/](http://localhost/app/).
+You're done! Now you can start the application by navigating to: [http://localhost/Kalories/app](http://localhost/Kalories/app).
 
 Login with **user1/user1**, **user2/user2** or by registering as a new user.
 
