@@ -44,7 +44,8 @@ return array(
 
 For MySQL, use the file **app/protected/data/Kalories-mysql.sql** to create the required tables.
 
-You're done! Now you can start the application by navigating to: http://localhost/app/.
+You're done! Now you can start the application by navigating to: (http://localhost/app/)[http://localhost/app/].
 
-Login as user1/user1 or user2/user2
-Administrator user is: admin/admin
+Login **user1/user1**, **user2/user2** or by registering as a new user.
+
+Administrator user is: **admin/admin**
