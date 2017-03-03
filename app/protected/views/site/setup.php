@@ -13,7 +13,7 @@ $this->pageTitle = array('Setup', Yii::app()->params['appTitle']);
         'size' => 'medium',
         'icon' => 'download-alt white',
         'label' => 'Download CaloriesK',
-        'url' => 'http://www.yiiframework.com/extension/bootstrap/',
+        'url' => 'https://github.com/agebeyaw/Kalories/archive/master.zip',
         'htmlOptions' => array('target' => '_blank'),
     ));
     ?>
