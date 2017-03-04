@@ -44,7 +44,7 @@
             <?php echo $form->error($model, 'date'); ?>
         </div>
     </div>
-    <?php //echo $form->hiddenField($model, 'user_id', array('value' => Yii::app()->user->id)); ?>
+    <?php echo $form->hiddenField($model, 'user_id', array('value' => Yii::app()->user->id)); ?>
 
     <div class="control-group">
         <?php echo $form->labelEx($model, 'number_of_calories', array('class' => 'control-label')); ?>
