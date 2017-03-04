@@ -1,5 +1,5 @@
 # Kalories
-Kalories is an Personal Calories Management Application that provides range of server-side widgets that allow you to easily use Bootstrap with Yii Framework
+"Kalories" is a Calories Management Web Application that demonstrates range of server-side widgets that allow you to easily use Bootstrap with Yii Framework 
 
 User can see a list of his meals and calories.
 Calories are entered manually.
