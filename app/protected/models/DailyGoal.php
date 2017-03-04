@@ -43,7 +43,7 @@ class DailyGoal extends CActiveRecord {
             array('user_id', 'numerical', 'integerOnly' => true),
             array('date', 'date', 'format' => 'yyyy-mm-dd', 'allowEmpty' => false),
             array('number_of_calories', 'numerical', 'integerOnly' => false, 'min' => 0, 'max' => 100000),
-            array('user_id, date', 'ECompositeUniqueValidator'),
+            array('date', 'ext.UniqueAttributesValidator', 'with'=>'user_id'),
             // The following rule is used by search().
             // Please remove those attributes that should not be searched.
             array('id, user_id, date, number_of_calories', 'safe', 'on' => 'search'),
