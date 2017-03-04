@@ -61,6 +61,7 @@ $this->widget('bootstrap.widgets.TbGridView', array(
         ),
         array(
             'class' => 'bootstrap.widgets.TbButtonColumn',
+			'template'=>'{view}{update}',
             'htmlOptions' => array('style' => 'width: 50px'),
             'buttons' => array(
                 'delete' => array(
@@ -82,7 +83,7 @@ $this->widget('bootstrap.widgets.TbGridView', array(
         $.fn.yiiGridView.update('user-grid');
     }
 </script>
-
+<!--
 <?php echo CHtml::ajaxSubmitButton("", array(), array(), array("style" => "visibility:hidden;")); ?>
 <?php
 echo CHtml::ajaxSubmitButton(
@@ -93,3 +94,4 @@ echo CHtml::ajaxSubmitButton(
 );
 ?>
 <?php $this->endWidget(); ?>
+-->
